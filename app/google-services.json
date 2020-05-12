@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "736982531124",
+    "firebase_url": "https://bluesport-f49e7.firebaseio.com",
+    "project_id": "bluesport-f49e7",
+    "storage_bucket": "bluesport-f49e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736982531124:android:dafdf74ab26779d20fde61",
+        "android_client_info": {
+          "package_name": "com.example.googleofflinelogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736982531124-u1l1vnh7ied1k53d7s0lepg3u4qo0bc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDumdiampBEwCCf_8DWCwQ6QLzmSsYdmww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736982531124-u1l1vnh7ied1k53d7s0lepg3u4qo0bc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736982531124:android:cb3207212ed68c06",
+        "android_client_info": {
+          "package_name": "edu.bluejack171.fredrickwidjaya.bluesport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736982531124-ci8rui9760ba6q7cf44p36ostjl9i4tl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.bluejack171.fredrickwidjaya.bluesport",
+            "certificate_hash": "e6d2d61e38815049a2b53354af1f47919e40823f"
+          }
+        },
+        {
+          "client_id": "736982531124-u1l1vnh7ied1k53d7s0lepg3u4qo0bc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDumdiampBEwCCf_8DWCwQ6QLzmSsYdmww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736982531124-u1l1vnh7ied1k53d7s0lepg3u4qo0bc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
