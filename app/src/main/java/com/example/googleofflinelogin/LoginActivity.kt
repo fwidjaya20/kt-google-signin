@@ -8,7 +8,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.Scopes
 import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.common.api.Scope
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -29,7 +31,11 @@ class LoginActivity : AppCompatActivity() {
 
     private fun login() {
         val serverClientId = getString(R.string.server_client_id)
+
+        Log.d("SERVER_CLIENT_ID", serverClientId)
+
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestScopes(Scope(Scopes.PROFILE), Scope(Scopes.EMAIL), Scope(Scopes.OPEN_ID))
             .requestServerAuthCode(serverClientId)
             .requestEmail()
             .build()
@@ -45,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        Log.d("Google_Sign_In_Data", data.toString())
+        Log.d("Google_Sign_In_Data", data.toString()) // use this to send to api
 
         val task = GoogleSignIn.getSignedInAccountFromIntent(data)
 
@@ -53,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
             try {
                 val account = task.getResult(ApiException::class.java)
 
-                Log.d("Google_Sign_In_Ac", account.toString())
+                Log.d("G_ServerAuthCode", account?.serverAuthCode.toString())
             } catch (ex: ApiException) {
                 Log.e("Google_Sign_In_Ex", ex.toString())
             }
